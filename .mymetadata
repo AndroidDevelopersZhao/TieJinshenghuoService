@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="NewClient_Service"
+  id="myeclipse.1451190819414"
+  context-root="/NewClient_Service"
+  j2ee-spec="5.0"
+  archive="NewClient_Service.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

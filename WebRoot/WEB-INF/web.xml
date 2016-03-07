@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+  
+   <servlet>
+  	<servlet-name>RSA</servlet-name>
+  	<servlet-class>keyinfo.SaveKeyInfo</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>RSA</servlet-name>
+  <url-pattern>/getPK_Service</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>my</servlet-name>
+  	<servlet-class>keyinfo.MyInfo</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>my</servlet-name>
+  <url-pattern>/MyInfo</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+  	<servlet-name>myService</servlet-name>
+  	<servlet-class>com.shanghai.GaregeService</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>myService</servlet-name>
+  	<url-pattern>/GaregeService</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+  	<servlet-name>GetAllOrder</servlet-name>
+  	<servlet-class>servlet.GetAllOrder</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>GetAllOrder</servlet-name>
+  	<url-pattern>/GetAllOrder</url-pattern>
+  </servlet-mapping>
+  
+    
+  <servlet>
+  	<servlet-name>UpDataOrder</servlet-name>
+  	<servlet-class>servlet.UpDataOrder</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>UpDataOrder</servlet-name>
+  	<url-pattern>/UpDataOrder</url-pattern>
+  </servlet-mapping>
+</web-app>
